@@ -13,7 +13,7 @@ function App() {
         <button onClick={handleShowAlert}> Show Alert</button>
         <a
         className="App-link"
-        href="https://github.com/AleksandraLks"
+        href="https://github.com/AleksandraLks/react_draft"
         target="_blank"
         >Git</a>
 
