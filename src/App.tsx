@@ -14,7 +14,6 @@ function App() {
         <a
         className="App-link"
         href="https://github.com/AleksandraLks/react_draft"
-        target="_blank"
         >Git</a>
 
       </header>
