@@ -1,21 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {FormInput} from "./Form/FormInput";
 
 function App() {
-  const handleShowAlert=()=>{
-    alert("Hello React!")
-  }
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={handleShowAlert}> Show Alert</button>
-        <a
-        className="App-link"
-        href="https://github.com/AleksandraLks/react_draft"
-        >Git</a>
-
+        <img src={logo}  style={{ height: 200, position:"absolute",top:5}} className="App-logo" alt="logo" />
+          <FormInput/>
       </header>
     </div>
   );
