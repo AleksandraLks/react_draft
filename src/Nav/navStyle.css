@@ -1,0 +1,30 @@
+.Nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    color: blanchedalmond;
+    min-height: 15vh;
+    justify-content: space-evenly;
+}
+.NavLink {
+    display: flex;
+    flex-direction: row;
+}
+.NavMob {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .Nav{
+        flex-direction: column;
+        background-color: mediumpurple;
+        color: blanchedalmond;
+    }
+    .NavMob{
+        display: none;
+    }
+    .NavLink{
+        flex-direction: column;
+    }
+}
