@@ -1,15 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {FormInput} from "./Form/FormInput";
+import {Nav} from './Nav/Nav';
+import {Route, Routes} from "react-router-dom";
+import {Landing} from './LandingPage/Landing'
+import {Contact} from './ContactPage/Contact';
+import {About} from './AboutPage/About';
+import Rick from './ApiPage/RickApi';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo}  style={{ height: 200, position:"absolute",top:5}} className="App-logo" alt="logo" />
-          <FormInput/>
-      </header>
+        <Nav/>
+        <Routes>
+            <Route path='/FormInput' element={<FormInput/>}/>
+            <Route path='/Landing' element={<Landing/>}/>
+            <Route path='/Contact' element={<Contact/>}/>
+            <Route path='/About' element={<About/>}/>
+            <Route path='/Rick' element={<Rick/>}/>
+
+        </Routes>
     </div>
   );
 }
