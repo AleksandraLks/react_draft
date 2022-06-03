@@ -1,0 +1,13 @@
+.RickApi{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #FAE48BFF;
+    background-color: #69C8ECFF;
+    background-size: auto;
+    min-height: 100vh;
+    padding:25%;
+
+}
